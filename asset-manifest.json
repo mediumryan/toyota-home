@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/toyota-home/static/css/main.dca6c343.css",
+    "main.js": "/toyota-home/static/js/main.12408c75.js",
+    "index.html": "/toyota-home/index.html",
+    "main.dca6c343.css.map": "/toyota-home/static/css/main.dca6c343.css.map",
+    "main.12408c75.js.map": "/toyota-home/static/js/main.12408c75.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dca6c343.css",
+    "static/js/main.12408c75.js"
+  ]
+}
