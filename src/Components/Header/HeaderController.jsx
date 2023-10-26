@@ -8,7 +8,6 @@ const HeaderControllerWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 12rem;
     h1 {
         a {
             font-size: 3.5rem;
@@ -19,6 +18,7 @@ const HeaderControllerWrapper = styled.div`
         display: flex;
         align-items: center;
         li {
+            font-size: 1rem;
             padding: 0.5rem;
             margin: 0 0.5rem;
             cursor: pointer;
