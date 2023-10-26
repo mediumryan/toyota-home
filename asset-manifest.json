@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/toyota-home/static/css/main.dca6c343.css",
-    "main.js": "/toyota-home/static/js/main.12408c75.js",
+    "main.css": "/toyota-home/static/css/main.e09c38df.css",
+    "main.js": "/toyota-home/static/js/main.bb95852c.js",
     "index.html": "/toyota-home/index.html",
-    "main.dca6c343.css.map": "/toyota-home/static/css/main.dca6c343.css.map",
-    "main.12408c75.js.map": "/toyota-home/static/js/main.12408c75.js.map"
+    "main.e09c38df.css.map": "/toyota-home/static/css/main.e09c38df.css.map",
+    "main.bb95852c.js.map": "/toyota-home/static/js/main.bb95852c.js.map"
   },
   "entrypoints": [
-    "static/css/main.dca6c343.css",
-    "static/js/main.12408c75.js"
+    "static/css/main.e09c38df.css",
+    "static/js/main.bb95852c.js"
   ]
 }
