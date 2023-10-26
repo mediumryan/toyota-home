@@ -12,6 +12,7 @@ const HeaderControllerWrapper = styled.div`
     h1 {
         a {
             font-size: 3.5rem;
+            color: var(--text-100);
         }
     }
     ul {
@@ -20,6 +21,10 @@ const HeaderControllerWrapper = styled.div`
         li {
             padding: 0.5rem;
             margin: 0 0.5rem;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--bg-200);
+            }
         }
     }
 `;
