@@ -1,4 +1,3 @@
-import React from 'react';
 import { useRecoilValue } from 'recoil';
 import { headerHeightState } from '../../atom';
 import { styled } from 'styled-components';
@@ -9,8 +8,8 @@ const HomeWrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     justify-content: center;
+    width: 100%;
 `;
 
 export default function Home() {
