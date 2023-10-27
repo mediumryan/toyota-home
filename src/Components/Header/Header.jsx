@@ -2,22 +2,27 @@ import React, { useEffect, useRef, useState } from 'react';
 import HeaderController from './HeaderController';
 import HeaderSubController from './HeaderSubController';
 import { styled } from 'styled-components';
+import { useSetRecoilState } from 'recoil';
+import { headerHeightState } from '../../atom';
 
 const HeaderWrapper = styled.header`
+    background-color: rgba(255, 255, 255, 0.75);
     position: fixed;
     top: 0;
     width: 100%;
     padding: 1rem 12rem;
     transform-origin: bottom center;
-    transition: transform 0.3s ease;
+    transition: transform 300ms ease;
 `;
 
 export default function Header() {
     const headerRef = useRef(null);
     const [isHeaderHidden, setHeaderHidden] = useState(false);
+    const setHeight = useSetRecoilState(headerHeightState);
 
     useEffect(() => {
         const headerHeight = headerRef.current.offsetHeight;
+        setHeight(headerHeight);
         const handleScroll = () => {
             if (window.scrollY > headerHeight) {
                 setHeaderHidden(true);
