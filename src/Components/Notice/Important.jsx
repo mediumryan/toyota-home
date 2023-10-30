@@ -32,6 +32,15 @@ export const NoticeItem = styled.a`
 
 export const NoticeViewAll = styled.p`
     flex-basis: 25%;
+    svg {
+        margin-left: 0.5rem;
+    }
+    a {
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
 `;
 
 export default function Important() {
@@ -57,7 +66,9 @@ export default function Important() {
                     href="https://toyota.jp/news/?padid=from_tjptop_important_all#important"
                     target="blank"
                 >
-                    一覧を見る <BsChevronRight />
+                    <div>
+                        一覧を見る <BsChevronRight />
+                    </div>
                 </a>
             </NoticeViewAll>
         </NoticeInnerWrapper>

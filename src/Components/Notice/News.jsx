@@ -36,8 +36,10 @@ export default function News() {
                     href="https://toyota.jp/news/?padid=from_tjptop_info_all#news_info"
                     target="blank"
                 >
-                    一覧を見る <BsChevronRight />
-                </a>{' '}
+                    <div>
+                        一覧を見る <BsChevronRight />
+                    </div>
+                </a>
             </NoticeViewAll>
         </NewsInnerWrapper>
     );
