@@ -13,6 +13,7 @@ const HeaderWrapper = styled.header`
     padding: 1rem 12rem;
     transform-origin: bottom center;
     transition: transform 300ms ease;
+    z-index: 2;
 `;
 
 export default function Header() {
