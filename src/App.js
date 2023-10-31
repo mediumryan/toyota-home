@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import Notice from './Components/Notice/Notice';
 import LineUp from './Components/LineUp/LineUp';
 import Delivery from './Components/Delivery/Delivery';
+import Template from './Components/Template/Template';
 
 const MainWrapper = styled.main`
     height: 500vh;
@@ -18,6 +19,7 @@ function App() {
             <Notice />
             <LineUp />
             <Delivery />
+            <Template />
         </MainWrapper>
     );
 }

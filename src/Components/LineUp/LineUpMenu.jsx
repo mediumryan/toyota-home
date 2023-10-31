@@ -40,9 +40,8 @@ export default function LineUpMenu() {
         <LineUpMenuWrapper>
             {lineUpMenu.map((item, index) => {
                 return (
-                    <AnimatePresence>
+                    <AnimatePresence key={item.id}>
                         <span
-                            key={item.id}
                             onClick={() => {
                                 handleMenu(item, index);
                             }}
