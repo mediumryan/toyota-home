@@ -1,6 +1,7 @@
-import { useRecoilState } from 'recoil';
+import { useRecoilState, useSetRecoilState } from 'recoil';
 import { styled } from 'styled-components';
-import { carTypeArr } from '../../atom';
+import { carTypeArr, nowCarType } from '../../atom';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const LineUpMenuWrapper = styled.div`
     display: flex;
@@ -11,18 +12,20 @@ const LineUpMenuWrapper = styled.div`
         font-size: 1rem;
         font-weight: 700;
         cursor: pointer;
-        div {
-            width: 100%;
-            height: 2px;
-            background-color: var(--accent-100);
-        }
     }
+`;
+
+const NowHere = styled(motion.div)`
+    width: 100%;
+    height: 2px;
+    background-color: var(--accent-100);
 `;
 
 export default function LineUpMenu() {
     const [lineUpMenu, setLineUpMenu] = useRecoilState(carTypeArr);
+    const setNowType = useSetRecoilState(nowCarType);
 
-    const handleMenu = (index) => {
+    const handleMenu = (item, index) => {
         const copy = [...lineUpMenu];
         const updatedMenu = copy.map((type) => ({
             ...type,
@@ -30,23 +33,24 @@ export default function LineUpMenu() {
         }));
         updatedMenu[index].state = true;
         setLineUpMenu(updatedMenu);
+        setNowType(item.type);
     };
 
     return (
         <LineUpMenuWrapper>
             {lineUpMenu.map((item, index) => {
                 return (
-                    <span
-                        key={item.id}
-                        onClick={() => {
-                            handleMenu(index);
-                        }}
-                    >
-                        {item.japanese}
-                        <div
-                            style={{ display: item.state ? 'block' : 'none' }}
-                        ></div>
-                    </span>
+                    <AnimatePresence>
+                        <span
+                            key={item.id}
+                            onClick={() => {
+                                handleMenu(item, index);
+                            }}
+                        >
+                            {item.japanese}
+                            {item.state && <NowHere layoutId="now_here" />}
+                        </span>
+                    </AnimatePresence>
                 );
             })}
         </LineUpMenuWrapper>
