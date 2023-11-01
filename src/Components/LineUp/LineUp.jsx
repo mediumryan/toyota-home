@@ -14,6 +14,7 @@ const LineUpInner = styled.div`
 
 const LineUpTitle = styled.h2`
     font-size: 1.5rem;
+    font-weight: 900;
     margin-bottom: 3rem;
 `;
 
@@ -25,7 +26,7 @@ const LineUpViewAll = styled(NoticeViewAll)`
         background-color: var(--bg-200);
     }
     a {
-        font-size: 14px;
+        font-size: 0.95rem;
         div {
         }
     }

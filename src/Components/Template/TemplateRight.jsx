@@ -1,17 +1,29 @@
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 import { styled } from 'styled-components';
 
 const TemplateRightWrapper = styled.div`
-    background-color: blue;
-    flex-basis: ${(props) => (props.index % 2 === 0 ? '67%' : '33%')};
+    order: ${(props) => (props.index % 2 === 0 ? 2 : 1)};
+    margin-left: ${(props) => (props.index % 2 === 0 ? '2rem' : 0)};
+    margin-right: ${(props) => (props.index % 2 === 0 ? 0 : '2rem')};
+    width: 65%;
 `;
 
-export default function TemplateRight({ index }) {
+export default function TemplateRight({ item, index }) {
     return (
         <TemplateRightWrapper index={index}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            eum quia reiciendis accusantium accusamus delectus illum repellat
-            aspernatur laborum officia. Quia cupiditate doloribus magni nobis
-            deserunt debitis, a expedita culpa.{index}
+            <Carousel infiniteLoop={true} showThumbs={false} showStatus={false}>
+                {item.images.map((img) => {
+                    return (
+                        <div key={img.id}>
+                            <img
+                                src={img.image_url}
+                                alt={`${item} - ${index}`}
+                            />
+                        </div>
+                    );
+                })}
+            </Carousel>
         </TemplateRightWrapper>
     );
 }

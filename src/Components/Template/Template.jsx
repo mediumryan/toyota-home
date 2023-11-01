@@ -1,43 +1,45 @@
 import { styled } from 'styled-components';
 import TemplateLeft from './TemplateLeft';
 import TemplateRight from './TemplateRight';
+import { useRecoilValue } from 'recoil';
+import { templates } from '../../atom';
 
 const TemplateOuter = styled.section`
-    margin: 4rem 0;
+    margin: 4rem 1rem;
 `;
 
-const TemplateInner = styled.div``;
+const TemplateInner = styled.div`
+    padding-left: 5rem;
+`;
 
 const TemplateInset = styled.div`
     display: flex;
     margin: 1rem 0;
+    margin-bottom: 5rem;
 `;
 
 export default function Template() {
-    const arr = [1, 2, 3, 4, 5];
+    const template = useRecoilValue(templates);
 
     return (
         <TemplateOuter>
             <TemplateInner>
-                {arr.map((item, index) => {
+                {template.map((item, index) => {
                     return (
-                        <TemplateInset
-                            style={{ order: index % 2 === 0 ? 1 : 2 }}
-                            key={index}
-                        >
+                        <TemplateInset key={item}>
                             <TemplateLeft
-                                style={{
-                                    order: index % 2 === 0 ? 1 : 2,
-                                    flexBasis: index % 2 === 0 ? '33%' : '67%',
-                                }}
+                                item={item}
                                 index={index}
+                                style={{
+                                    flexBasis: index % 2 === 0 ? '40%' : '60%',
+                                }}
                             />
                             <TemplateRight
-                                style={{
-                                    order: index % 2 === 0 ? 2 : 1,
-                                    flexBasis: index % 2 === 0 ? '67%' : '33%',
-                                }}
+                                item={item}
                                 index={index}
+                                style={{
+                                    flexBasis: index % 2 === 0 ? '60%' : '40%',
+                                }}
                             />
                         </TemplateInset>
                     );

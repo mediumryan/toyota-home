@@ -35,18 +35,9 @@
     --padding-double-small: 8px 12px;
 }
 
-/* fonts */
-
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff')
-        format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 body {
-    font-family: 'GmarketSansMedium';
+    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* Media query --- mobile */
 @media (min-width: 844px) and (min-height: 390px) {

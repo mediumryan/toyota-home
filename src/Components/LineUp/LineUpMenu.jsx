@@ -10,7 +10,7 @@ const LineUpMenuWrapper = styled.div`
     span {
         margin-right: 1rem;
         font-size: 1rem;
-        font-weight: 700;
+        font-weight: 500;
         cursor: pointer;
     }
 `;

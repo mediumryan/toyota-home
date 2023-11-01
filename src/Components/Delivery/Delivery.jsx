@@ -18,7 +18,7 @@ const DeliveryInner = styled.a`
 
 const DeliveryContent = styled.span`
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 900;
 `;
 
 export default function Delivery() {

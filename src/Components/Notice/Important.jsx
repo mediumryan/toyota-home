@@ -9,7 +9,7 @@ export const NoticeInnerWrapper = styled.div`
 `;
 
 export const NoticeTitle = styled.h3`
-    font-weight: 700;
+    font-weight: 900;
     font-size: 20px;
     flex-basis: 25%;
     margin-left: 10rem;

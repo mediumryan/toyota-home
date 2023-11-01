@@ -1,10 +1,12 @@
 import { atom } from 'recoil';
 
+// For Header //
 export const headerHeightState = atom({
     key: 'header_height',
     default: 0,
 });
 
+// For Home //
 export const HomeSliderArr = atom({
     key: 'home_slider_array',
     default: [
@@ -53,8 +55,7 @@ export const HomeSliderArr = atom({
     ],
 });
 
-// States about Line-up component
-
+// For Line-Up //
 export const carTypeArr = atom({
     key: 'car_type_array',
     default: [
@@ -126,7 +127,6 @@ export const nowCarType = atom({
     default: 'compact',
 });
 
-// comport car
 export const cars = atom({
     key: 'car_compact',
     default: [
@@ -597,6 +597,168 @@ export const cars = atom({
             image_path:
                 'https://toyota.jp/pages/contents/carlineup/image/car/cpod/30.png',
             type: 'mobility',
+        },
+    ],
+});
+
+// For Template //
+export const templates = atom({
+    key: 'template_item_state',
+    default: [
+        {
+            id: 0,
+            images: [
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/crownsport/crownsport_pc_1.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/crownsport/crownsport_pc_2.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/crownsport/crownsport_pc_3.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/crownsport/crownsport_pc_4.jpg',
+                },
+            ],
+            type: 'SUV',
+            name: 'CROWN"SPORT"',
+            description1:
+                'エモーショナルで創造的な雰囲気と\nあらゆる人を笑顔にする走りで、\nあなたの心を弾ませるスポーツSUV。',
+            description2:
+                '目を奪う艶やかなエクステリアデザイン\n上質、俊敏。誰もが楽しめるスポーツ走行\n心弾む爽快な2.5Lハイブリッドシステム',
+        },
+        {
+            id: 0,
+            images: [
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/centurynewbt/century_pc_1.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/_system/common/image/noimage.png',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/centurynewbt/century_pc_3.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/centurynewbt/century_pc_4.jpg',
+                },
+            ],
+            type: 'センチュリー',
+            name: 'CENTURY',
+            description1:
+                '独自の美意識や思想を継承・進化。\n後席空間に新しい価値を創造した、\nショーファーカーのもう一つの理想。',
+            description2:
+                '日本の美、匠の技、唯一無二の存在感\nより有意義な移動時間を提供する後席著\nしい進化を遂げた静けさと乗り心地',
+        },
+        {
+            id: 0,
+            images: [
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/alphard/alphard_pc_1.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/alphard/alphard_pc_2.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/alphard/alphard_pc_3.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/alphard/alphard_pc_4.jpg',
+                },
+            ],
+            type: 'ミニバン',
+            name: 'ALPHARD',
+            description1:
+                '一歩先へ進化を遂げた究極のもてなし空間。\n隅々に行き渡る快適さが、\nあらゆる移動をくつろぎに変えていく。',
+            description2:
+                'おもてなし装備に満ちた後席空間\n上質を磨き上げたエクステリアデザイン\n大切な人を守り抜く安全性能',
+        },
+        {
+            id: 0,
+            images: [
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/vellfire/vellfire_pc_1.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/vellfire/vellfire_pc_2.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/vellfire/vellfire_pc_3.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/vellfire/vellfire_pc_4.jpg',
+                },
+            ],
+            type: 'ミニバン',
+            name: 'VELLFIRE',
+            description1:
+                '毎日の移動を、アグレシッブに。\n圧倒的な力強さと極上の快適さに\n心が昂ぶる、大空間サルーン。',
+            description2:
+                '力強さと心地よさを両立した動的性\n能移動の快適さを極めた後席空間\n周囲を圧倒するエクステリアデザイン',
+        },
+        {
+            id: 0,
+            images: [
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/prius/prius_pc_1.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/prius/prius_pc_2.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/prius/prius_pc_3.jpg',
+                },
+                {
+                    id: 0,
+                    image_url:
+                        'https://toyota.jp/pages/contents/top/image/pr_area/prius/prius_pc_4.jpg',
+                },
+            ],
+            type: 'セダン',
+            name: 'PRIUS',
+            description1:
+                '一目惚れするデザインと虜になる走りで\n乗るほどに愛が深まる、\nハイブリッドカーの先駆け。',
+            description2:
+                '感性に響くスタイリッシュデザイン\n走りへのワクワク感と上質さを両立した空間\nPHEVとHEVの虜になる走行性能',
         },
     ],
 });
