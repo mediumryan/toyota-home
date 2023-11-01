@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/toyota-home/static/css/main.614713b8.css",
-    "main.js": "/toyota-home/static/js/main.bbc1c244.js",
+    "main.css": "/toyota-home/static/css/main.6c288b6b.css",
+    "main.js": "/toyota-home/static/js/main.97e04255.js",
+    "static/media/revicons.eot": "/toyota-home/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/toyota-home/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/toyota-home/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/toyota-home/index.html",
-    "main.614713b8.css.map": "/toyota-home/static/css/main.614713b8.css.map",
-    "main.bbc1c244.js.map": "/toyota-home/static/js/main.bbc1c244.js.map"
+    "main.6c288b6b.css.map": "/toyota-home/static/css/main.6c288b6b.css.map",
+    "main.97e04255.js.map": "/toyota-home/static/js/main.97e04255.js.map"
   },
   "entrypoints": [
-    "static/css/main.614713b8.css",
-    "static/js/main.bbc1c244.js"
+    "static/css/main.6c288b6b.css",
+    "static/js/main.97e04255.js"
   ]
 }
