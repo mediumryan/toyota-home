@@ -6,6 +6,7 @@ import Notice from './Components/Notice/Notice';
 import LineUp from './Components/LineUp/LineUp';
 import Delivery from './Components/Delivery/Delivery';
 import Template from './Components/Template/Template';
+import Topics from './Components/Topics/Topics';
 
 const MainWrapper = styled.main`
     height: 500vh;
@@ -20,6 +21,7 @@ function App() {
             <LineUp />
             <Delivery />
             <Template />
+            <Topics />
         </MainWrapper>
     );
 }
