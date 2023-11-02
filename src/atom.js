@@ -762,3 +762,75 @@ export const templates = atom({
         },
     ],
 });
+
+// For Footer //
+export const footerMenu1 = atom({
+    key: 'footer_main_menu_items_1',
+    default: [
+        {
+            id: 0,
+            name: 'トヨタイムズ',
+            url: 'https://toyotatimes.jp/?padid=from_tjptop_footer_toyotaimes&_ga=2.41825893.613655581.1698571182-286818589.1698218336&_gl=1*1uo99vz*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NTI2MC4xMS4xLjE2OTg4OTU0OTIuNTIuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 1,
+            name: 'TOYOTA Gazoo Racing',
+            url: 'https://toyotagazooracing.com/jp/?padid=from_tjptop_footer_gazooracing&_ga=2.209647061.613655581.1698571182-286818589.1698218336&_gl=1*1rw6vuy*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NTI2MC4xMS4xLjE2OTg4OTU0OTIuNTIuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 2,
+            name: 'START YOUR IMPOSSIBLE',
+            url: 'https://www.startyourimpossible.com/en-us/',
+        },
+        {
+            id: 3,
+            name: 'トヨタ自動車株式会社 公式企業サイト',
+            url: 'https://global.toyota/jp/',
+        },
+    ],
+});
+export const footerMenu2 = atom({
+    key: 'footer_main_menu_items_2',
+    default: [
+        {
+            id: 0,
+            name: 'GAZOO',
+            url: 'https://gazoo.com/?padid=from_tjptop_footer_gazoo&_ga=2.8862066.613655581.1698571182-286818589.1698218336&_gl=1*1n4z58l*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NzM4Ni4xMi4wLjE2OTg4OTczODYuNjAuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 1,
+            name: '中古車オンラインストア',
+            url: 'https://toyota-outlet.gazoo.com/?padid=from_tjptop_footer_toyota-outlet&_ga=2.8862066.613655581.1698571182-286818589.1698218336&_gl=1*1n4z58l*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NzM4Ni4xMi4wLjE2OTg4OTczODYuNjAuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 2,
+            name: 'クルマ買取',
+            url: 'https://toyota.jp/akaitori/?padid=from_tjptop_footer_privacy_akaitori',
+        },
+        {
+            id: 3,
+            name: 'トヨタレンタカー',
+            url: 'https://rent.toyota.co.jp/?padid=from_tjptop_footer_rent&_ga=2.50345198.613655581.1698571182-286818589.1698218336&_gl=1*171eris*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NzM4Ni4xMi4wLjE2OTg4OTczODYuNjAuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 4,
+            name: 'KINTO',
+            url: 'https://kinto-jp.com/?_ga=2.212736595.613655581.1698571182-286818589.1698218336&_gl=1*8xs220*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NzM4Ni4xMi4wLjE2OTg4OTczODYuNjAuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 5,
+            name: 'TOYOTA SHARE',
+            url: 'https://mobility.toyota.jp/r-toyotashare/?padid=from_tjptop_footer_toyotashare&_ga=2.212736595.613655581.1698571182-286818589.1698218336&_gl=1*fxf605*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NzM4Ni4xMi4xLjE2OTg4OTc1NTUuNjAuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 6,
+            name: '法人リース',
+            url: 'https://mobility.toyota.jp/leasing/?padid=from_tjptop_footer_leasing&_ga=2.212736595.613655581.1698571182-286818589.1698218336&_gl=1*fxf605*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5ODg5NzM4Ni4xMi4xLjE2OTg4OTc1NTUuNjAuMC4w*_fplc*YjNtUGFyJTJCJTJCc0JGSHBnOFpOYXFsR1VkcGlvZENZb2YwVGhxbTRJMlI0ak5IMlZ6JTJCcXR0b2s5JTJCR2xUbmUyQmVtT1VCNEtvdWhBOWxUQm5FbWNlWXQ5SmwlMkJ1TE9mUllNc1lmZFR5RiUyQiUyRnVqUCUyQkk0QTVScSUyRkhVNXVkbDc5Zmh3JTNEJTNE',
+        },
+        {
+            id: 7,
+            name: 'トヨタのau',
+            url: 'https://toyota.jp/aushop/?padid=from_tjptop_footer_aushop',
+        },
+    ],
+});
