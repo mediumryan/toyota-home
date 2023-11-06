@@ -41,6 +41,14 @@ const FAQ = styled.div`
     }
 `;
 
+const FooterRights = styled.div`
+    font-size: 0.8rem;
+    color: var(--text-200);
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    cursor: default;
+`;
+
 export default function Footer() {
     return (
         <FooterOuter>
@@ -58,6 +66,9 @@ export default function Footer() {
                     <FooterContact />
                 </FooterContents>
                 <FooterSubmenu />
+                <FooterRights>
+                    ©1995-2023 TOYOTA MOTOR CORPORATION. ALL RIGHTS RESERVED.
+                </FooterRights>
             </FooterInner>
         </FooterOuter>
     );

@@ -1,26 +1,77 @@
 import React from 'react';
+import { styled } from 'styled-components';
+import { BsChevronRight } from 'react-icons/bs';
+import ToyotimesLogo from './../../images/toyotimes.png';
+
+const FooterSNS = styled.div`
+    dt {
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        font-weight: 900;
+    }
+`;
+
+const SnsContainer = styled.ul`
+    display: flex;
+`;
+
+const SnsItem = styled.li`
+    padding: 0.25rem;
+    margin: 0.25rem;
+`;
+
+const Svg = styled.svg`
+    width: 22.5px;
+    height: 22.5px;
+`;
+
+const ToyoTimes = styled.img`
+    background-color: var(--bg-100);
+    width: 100px;
+    height: 32px;
+    margin: 1rem 0 1rem 0.25rem;
+    padding-left: 0.25rem;
+`;
+
+const FooterSubscribe = styled.div`
+    margin-top: 1rem;
+    margin-left: 0.25rem;
+    padding-left: 0.25rem;
+    dt {
+        font-weight: 900;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    dd {
+        a {
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            span:first-child {
+                margin-right: 1rem;
+            }
+        }
+    }
+`;
 
 export default function FooterContact() {
     return (
-        <div class="global-footer__main-menu-group-item">
-            <div class="global-footer__main-menu-sub-group-row">
-                <div class="global-footer__main-menu-sub-group-row-item">
-                    <dl class="global-footer__sns">
-                        <dt class="global-footer__sns-heading">公式SNS</dt>
-                        <dd class="global-footer__sns-contents">
-                            <ul class="global-footer__sns-list">
-                                <li class="global-footer__sns-list-item">
+        <div>
+            <div>
+                <FooterSNS>
+                    <dl>
+                        <dt>公式SNS</dt>
+                        <dd>
+                            <SnsContainer>
+                                <SnsItem>
                                     <a
-                                        class="global-footer__icon-button"
-                                        href="https://line.naver.jp/ti/p/%40toyota"
-                                        target="_blank"
-                                        scevent="line"
+                                        href="https://line.me/R/ti/p/@toyota?from=page&openQrModal=true&searchId=toyota"
+                                        target="blank"
                                     >
-                                        <span class="global-footer__icon-button-text">
-                                            LINE
-                                        </span>
-                                        <span class="global-footer__icon-button-symbol">
-                                            <svg
+                                        <span>
+                                            <Svg
                                                 class="global-footer__icon-button-svg global-footer__icon-button-svg--line"
                                                 viewBox="0 0 24 24"
                                                 fill="none"
@@ -50,67 +101,33 @@ export default function FooterContact() {
                                                     d="M14.1347 9.27344H13.594C13.5132 9.27344 13.4482 9.33844 13.4482 9.41915V11.3942L11.9268 9.33915C11.9232 9.33415 11.919 9.32915 11.9154 9.32415C11.9154 9.32415 11.9154 9.32415 11.9147 9.32344C11.9118 9.32058 11.909 9.31701 11.9061 9.31415C11.9054 9.31344 11.904 9.31272 11.9032 9.31201C11.9004 9.30987 11.8982 9.30772 11.8954 9.30558C11.894 9.30487 11.8925 9.30344 11.8911 9.30272C11.889 9.30058 11.8861 9.29915 11.8832 9.29772C11.8818 9.29701 11.8804 9.29558 11.879 9.29487C11.8761 9.29344 11.874 9.29201 11.8711 9.29058C11.8697 9.28987 11.8682 9.28915 11.8668 9.28844C11.864 9.28701 11.8611 9.28558 11.8582 9.28487C11.8568 9.28487 11.8554 9.28344 11.8532 9.28344C11.8504 9.28272 11.8475 9.28129 11.8447 9.28058C11.8432 9.28058 11.8411 9.27987 11.8397 9.27915C11.8368 9.27915 11.834 9.27772 11.8311 9.27701C11.829 9.27701 11.8268 9.27701 11.8247 9.27629C11.8218 9.27629 11.8197 9.27558 11.8168 9.27558C11.814 9.27558 11.8118 9.27558 11.809 9.27558C11.8075 9.27558 11.8054 9.27558 11.804 9.27558H11.2668C11.1868 9.27558 11.1211 9.34058 11.1211 9.42129V12.747C11.1211 12.827 11.1861 12.8927 11.2668 12.8927H11.8075C11.8882 12.8927 11.9532 12.8277 11.9532 12.747V10.772L13.4768 12.8299C13.4875 12.8449 13.5004 12.857 13.5147 12.8663C13.5147 12.8663 13.5161 12.867 13.5161 12.8677C13.519 12.8699 13.5218 12.8713 13.5254 12.8734C13.5268 12.8742 13.5282 12.8749 13.5297 12.8756C13.5318 12.877 13.5347 12.8777 13.5368 12.8792C13.539 12.8806 13.5418 12.8813 13.544 12.882C13.5454 12.882 13.5468 12.8834 13.5482 12.8834C13.5518 12.8849 13.5547 12.8856 13.5582 12.8863C13.5582 12.8863 13.5597 12.8863 13.5604 12.8863C13.5725 12.8892 13.5854 12.8913 13.5982 12.8913H14.1354C14.2154 12.8913 14.2811 12.8263 14.2811 12.7456V9.41987C14.2811 9.33987 14.2161 9.27415 14.1354 9.27415L14.1347 9.27344Z"
                                                     fill="#06C755"
                                                 ></path>
-                                            </svg>
+                                            </Svg>
                                         </span>
                                     </a>
-                                </li>
-                                <li class="global-footer__sns-list-item">
+                                </SnsItem>
+                                <SnsItem>
                                     <a
-                                        class="global-footer__icon-button"
-                                        href="https://twitter.com/TOYOTA_PR/"
-                                        target="_blank"
-                                        scevent="x"
+                                        href="https://twitter.com/i/flow/login?redirect_after_login=%2FTOYOTA_PR%2F"
+                                        target="blank"
                                     >
-                                        <span class="global-footer__icon-button-text">
-                                            X
-                                        </span>
-                                        <span class="global-footer__icon-button-symbol">
-                                            <svg
-                                                class="global-footer__icon-button-svg global-footer__icon-button-svg--x"
+                                        <span>
+                                            <Svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                viewBox="0 0 22.7 22.7"
+                                                viewBox="0 0 24 24"
+                                                version="1.1"
                                             >
-                                                <g>
-                                                    <g>
-                                                        <defs>
-                                                            <rect
-                                                                id="svg-icon-x"
-                                                                width="22.7"
-                                                                height="22.7"
-                                                            ></rect>
-                                                        </defs>
-                                                        <clipPath id="SVGID_00000048501038027014754920000007806585799139211198_">
-                                                            <use
-                                                                xlink:href="#svg-icon-x"
-                                                                style="overflow:visible;"
-                                                            ></use>
-                                                        </clipPath>
-                                                        <g style="clip-path:url(#SVGID_00000048501038027014754920000007806585799139211198_);">
-                                                            <path d="M22.7,0H0v22.7h22.7V0z"></path>
-                                                            <path
-                                                                style="fill:#FFFFFF;"
-                                                                d="M12.5,10.3l4.8-5.6h-1.2L12,9.5L8.7,4.7H4.9L10,12l-5.1,5.9H6l4.4-5.1l3.5,5.1h3.9L12.5,10.3L12.5,10.3zM11.1,12.1l-0.5-0.7l-4-5.7h1.7l3.2,4.7l0.5,0.7l4.3,6.1h-1.7L11.1,12.1L11.1,12.1z"
-                                                            ></path>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </svg>
+                                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                            </Svg>
                                         </span>
                                     </a>
-                                </li>
-                                <li class="global-footer__sns-list-item">
+                                </SnsItem>
+                                <SnsItem>
                                     <a
-                                        class="global-footer__icon-button"
                                         href="https://www.facebook.com/ToyotaMotorCorporation/"
-                                        target="_blank"
-                                        scevent="facebook"
+                                        target="blank"
                                     >
-                                        <span class="global-footer__icon-button-text">
-                                            Facebook
-                                        </span>
-                                        <span class="global-footer__icon-button-symbol">
-                                            <svg
+                                        <span>
+                                            <Svg
                                                 class="global-footer__icon-button-svg global-footer__icon-button-svg--facebook"
                                                 viewBox="0 0 24 24"
                                                 fill="none"
@@ -124,22 +141,17 @@ export default function FooterContact() {
                                                     d="M16.4487 15.2991L16.9554 11.9955H13.7857V9.85179C13.7857 8.94799 14.2286 8.06696 15.6482 8.06696H17.0893V5.25446C17.0893 5.25446 15.7815 5.03125 14.531 5.03125C11.9205 5.03125 10.2143 6.61339 10.2143 9.47768V11.9955H7.3125V15.2991H10.2143V23.2853C10.7962 23.3766 11.3924 23.4241 12 23.4241C12.6076 23.4241 13.2038 23.3766 13.7857 23.2853V15.2991H16.4487Z"
                                                     fill="white"
                                                 ></path>
-                                            </svg>
+                                            </Svg>
                                         </span>
                                     </a>
-                                </li>
-                                <li class="global-footer__sns-list-item">
+                                </SnsItem>
+                                <SnsItem>
                                     <a
-                                        class="global-footer__icon-button"
                                         href="https://www.youtube.com/user/toyotajpchannel/"
-                                        target="_blank"
-                                        scevent="youtube"
+                                        target="blank"
                                     >
-                                        <span class="global-footer__icon-button-text">
-                                            YouTube
-                                        </span>
-                                        <span class="global-footer__icon-button-symbol">
-                                            <svg
+                                        <span>
+                                            <Svg
                                                 class="global-footer__icon-button-svg global-footer__icon-button-svg--youtube"
                                                 viewBox="0 0 28 20"
                                                 fill="none"
@@ -153,202 +165,135 @@ export default function FooterContact() {
                                                     d="M11.0273 14.275L18.0069 10.2469L11.0273 6.21875V14.275Z"
                                                     fill="white"
                                                 ></path>
-                                            </svg>
+                                            </Svg>
                                         </span>
                                     </a>
-                                </li>
-                                <li class="global-footer__sns-list-item">
+                                </SnsItem>
+                                <SnsItem>
                                     <a
-                                        class="global-footer__icon-button"
                                         href="https://www.instagram.com/toyota_jp/"
-                                        target="_blank"
-                                        scevent="instagram"
+                                        target="blank"
                                     >
-                                        <span class="global-footer__icon-button-text">
-                                            Instagram
-                                        </span>
-                                        <span class="global-footer__icon-button-symbol">
-                                            <svg
-                                                class="global-footer__icon-button-svg global-footer__icon-button-svg--instagram"
-                                                viewBox="0 0 24 24"
-                                                fill="none"
+                                        <span>
+                                            <Svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                viewBox="0 0 16 16"
+                                                id="instagram"
                                             >
-                                                <mask
-                                                    id="mask0_2549_77058"
-                                                    style="mask-type:luminance"
-                                                    maskUnits="userSpaceOnUse"
-                                                    x="0"
-                                                    y="0"
-                                                    width="24"
-                                                    height="24"
+                                                <linearGradient
+                                                    id="a"
+                                                    x1="1.464"
+                                                    x2="14.536"
+                                                    y1="14.536"
+                                                    y2="1.464"
+                                                    gradientUnits="userSpaceOnUse"
                                                 >
-                                                    <path
-                                                        d="M7.26871 0.648872C6.05271 0.706205 5.22204 0.900872 4.49671 1.18487C3.74604 1.47821 3.10871 1.8702 2.47537 2.5062C1.84071 3.1422 1.45137 3.78087 1.16071 4.53287C0.879374 5.26087 0.688707 6.09154 0.635374 7.30754C0.58204 8.52621 0.57004 8.91554 0.575374 12.0182C0.580707 15.1209 0.595374 15.5102 0.652707 16.7289C0.711374 17.9449 0.904707 18.7742 1.18871 19.5009C1.48204 20.2515 1.87404 20.8889 2.51004 21.5222C3.14604 22.1555 3.78471 22.5449 4.53671 22.8355C5.26337 23.1169 6.09404 23.3075 7.31137 23.3609C8.53004 23.4142 8.91937 23.4262 12.0207 23.4209C15.1247 23.4155 15.514 23.4009 16.7327 23.3435C17.9487 23.2849 18.778 23.0902 19.5047 22.8075C20.2554 22.5142 20.8927 22.1222 21.526 21.4862C22.1594 20.8502 22.5487 20.2115 22.8394 19.4595C23.1207 18.7329 23.3127 17.9022 23.3647 16.6862C23.418 15.4662 23.43 15.0769 23.4247 11.9742C23.4194 8.87154 23.4047 8.48221 23.3474 7.26354C23.29 6.04754 23.0954 5.21687 22.8114 4.49154C22.518 3.74087 22.126 3.10487 21.49 2.47021C20.854 1.83687 20.2154 1.4462 19.4634 1.15687C18.7367 0.875538 17.906 0.683538 16.6887 0.631538C15.47 0.576872 15.0807 0.566205 11.978 0.571538C8.87537 0.576872 8.48604 0.590205 7.26737 0.648872M7.40071 21.3049C6.28604 21.2569 5.68204 21.0715 5.27804 20.9155C4.74471 20.7089 4.36337 20.4609 3.96204 20.0635C3.56204 19.6635 3.31404 19.2835 3.10471 18.7515C2.94871 18.3489 2.75937 17.7435 2.70737 16.6302C2.65137 15.4262 2.63804 15.0649 2.63271 12.0129C2.62737 8.96221 2.63804 8.60087 2.69004 7.39554C2.73804 6.28221 2.92337 5.67687 3.07937 5.27421C3.28604 4.73954 3.53271 4.35954 3.93137 3.95821C4.33137 3.55687 4.71004 3.31021 5.24337 3.10087C5.64604 2.94354 6.25004 2.75687 7.36337 2.70354C8.56871 2.64621 8.93004 2.63421 11.9794 2.62887C15.03 2.62354 15.3914 2.63421 16.5967 2.68621C17.71 2.73421 18.3154 2.91954 18.718 3.07554C19.2527 3.28221 19.6327 3.52887 20.034 3.92754C20.434 4.32754 20.6834 4.70621 20.8914 5.24087C21.0487 5.64221 21.2354 6.24754 21.2887 7.36087C21.346 8.56621 21.3594 8.92754 21.3647 11.9782C21.37 15.0289 21.3594 15.3902 21.306 16.5955C21.258 17.7102 21.0727 18.3155 20.9167 18.7182C20.71 19.2515 20.4634 19.6329 20.0647 20.0342C19.666 20.4342 19.286 20.6822 18.7527 20.8915C18.35 21.0489 17.746 21.2355 16.6327 21.2889C15.4274 21.3449 15.066 21.3582 12.0154 21.3635C8.96471 21.3689 8.60471 21.3582 7.39804 21.3062M16.7127 5.88887C16.714 6.64621 17.33 7.2582 18.086 7.25687C18.8434 7.25554 19.4554 6.64087 19.4554 5.88354C19.454 5.1262 18.838 4.5142 18.082 4.51554C17.326 4.51687 16.7114 5.13287 16.7127 5.88887ZM6.13137 12.0075C6.13804 15.2475 8.77004 17.8689 12.01 17.8635C15.25 17.8569 17.8727 15.2262 17.866 11.9849C17.8594 8.74487 15.2274 6.12221 11.9874 6.12887C8.74737 6.13554 6.12604 8.76754 6.13137 12.0075ZM8.19004 12.0035C8.18604 9.90087 9.88871 8.19154 11.9914 8.18754C14.094 8.18354 15.8034 9.88487 15.8074 11.9889C15.8114 14.0929 14.1087 15.8009 12.006 15.8049C9.90337 15.8089 8.19404 14.1075 8.19004 12.0035Z"
-                                                        fill="white"
-                                                    ></path>
-                                                </mask>
-                                                <g mask="url(#mask0_2549_77058)">
-                                                    <mask
-                                                        id="mask1_2549_77058"
-                                                        style="mask-type:luminance"
-                                                        maskUnits="userSpaceOnUse"
-                                                        x="-1"
-                                                        y="-1"
-                                                        width="26"
-                                                        height="26"
-                                                    >
-                                                        <path
-                                                            d="M24.3317 -0.328125H-0.349609V24.3532H24.3317V-0.328125Z"
-                                                            fill="white"
-                                                        ></path>
-                                                    </mask>
-                                                    <g mask="url(#mask1_2549_77058)">
-                                                        <mask
-                                                            id="mask2_2549_77058"
-                                                            style="mask-type:luminance"
-                                                            maskUnits="userSpaceOnUse"
-                                                            x="-8"
-                                                            y="-7"
-                                                            width="39"
-                                                            height="39"
-                                                        >
-                                                            <path
-                                                                d="M31.0004 -6.99219H-7.01562V31.0225H31.0004V-6.99219Z"
-                                                                fill="white"
-                                                            ></path>
-                                                        </mask>
-                                                        <g mask="url(#mask2_2549_77058)">
-                                                            <rect
-                                                                x="-7.375"
-                                                                y="-7.46875"
-                                                                width="38.4"
-                                                                height="38.88"
-                                                                fill="url(#pattern0)"
-                                                            ></rect>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <pattern
-                                                        id="pattern0"
-                                                        patternContentUnits="objectBoundingBox"
-                                                        width="1"
-                                                        height="1"
-                                                    >
-                                                        <use
-                                                            xlink:href="#image0_2549_77058"
-                                                            transform="scale(0.0126582 0.0125)"
-                                                        ></use>
-                                                    </pattern>
-                                                    <image
-                                                        id="image0_2549_77058"
-                                                        width="79"
-                                                        height="80"
-                                                        xlink:href="data:image/png;base64,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"
-                                                    ></image>
-                                                </defs>
-                                            </svg>
+                                                    <stop
+                                                        offset="0"
+                                                        stop-color="#FFC107"
+                                                    ></stop>
+                                                    <stop
+                                                        offset=".507"
+                                                        stop-color="#F44336"
+                                                    ></stop>
+                                                    <stop
+                                                        offset=".99"
+                                                        stop-color="#9C27B0"
+                                                    ></stop>
+                                                </linearGradient>
+                                                <path
+                                                    fill="url(#a)"
+                                                    d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z"
+                                                ></path>
+                                                <linearGradient
+                                                    id="b"
+                                                    x1="5.172"
+                                                    x2="10.828"
+                                                    y1="10.828"
+                                                    y2="5.172"
+                                                    gradientUnits="userSpaceOnUse"
+                                                >
+                                                    <stop
+                                                        offset="0"
+                                                        stop-color="#FFC107"
+                                                    ></stop>
+                                                    <stop
+                                                        offset=".507"
+                                                        stop-color="#F44336"
+                                                    ></stop>
+                                                    <stop
+                                                        offset=".99"
+                                                        stop-color="#9C27B0"
+                                                    ></stop>
+                                                </linearGradient>
+                                                <path
+                                                    fill="url(#b)"
+                                                    d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z"
+                                                ></path>
+                                                <linearGradient
+                                                    id="c"
+                                                    x1="11.923"
+                                                    x2="12.677"
+                                                    y1="4.077"
+                                                    y2="3.323"
+                                                    gradientUnits="userSpaceOnUse"
+                                                >
+                                                    <stop
+                                                        offset="0"
+                                                        stop-color="#FFC107"
+                                                    ></stop>
+                                                    <stop
+                                                        offset=".507"
+                                                        stop-color="#F44336"
+                                                    ></stop>
+                                                    <stop
+                                                        offset=".99"
+                                                        stop-color="#9C27B0"
+                                                    ></stop>
+                                                </linearGradient>
+                                                <circle
+                                                    cx="12.3"
+                                                    cy="3.7"
+                                                    r=".533"
+                                                    fill="url(#c)"
+                                                ></circle>
+                                            </Svg>
                                         </span>
                                     </a>
-                                </li>
-                            </ul>
+                                </SnsItem>
+                            </SnsContainer>
                         </dd>
                     </dl>
-                    <div class="global-footer__menu-misc">
+                    <div>
                         <a
-                            class="global-footer__logo-button global-footer__logo-button--toyotatimes"
-                            href="https://toyotatimes.jp/?padid=from_tjptop_footer_toyotaimes_logo"
-                            target="_blank"
+                            href="https://toyotatimes.jp/?padid=from_tjptop_footer_toyotaimes_logo&_ga=2.50263265.613655581.1698571182-286818589.1698218336&_gl=1*1wcfw3q*_ga*Mjg2ODE4NTg5LjE2OTgyMTgzMzY.*_ga_BLSGKL3LFQ*MTY5OTI1NDUxNy4xNC4wLjE2OTkyNTQ1NDYuMzEuMC4w*_fplc*JTJCazZqZ25NS25XU3d0aG9PUFFvcTVpZWV1MmpoRHolMkJ3QkZmdG9hdjglMkJ2dWduJTJGSlBDSDVaZ085UHNhc09NTzV3SWYwbHhNYWJNdktPJTJGQkpJZHVTa2Z4ZGZlRkoxd2pnQ2thMlBjMnUxaUdJWU5YOEVQMXBqT2pBZU41RnpEQSUzRCUzRA.."
+                            target="blank"
                         >
-                            <span class="global-footer__logo-button-text">
-                                トヨタイムズ
-                            </span>
-                            <span class="global-footer__logo-button-symbol">
-                                <svg
-                                    class="global-footer__logo-button-svg"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    viewBox="0 0 99.8 32"
-                                >
-                                    <g>
-                                        <defs>
-                                            <rect
-                                                id="svg-toyotatimes"
-                                                width="99.8"
-                                                height="32"
-                                            ></rect>
-                                        </defs>
-                                        <clipPath id="SVGID_00000133487636625578837320000016383521004108553662_">
-                                            <use
-                                                xlink:href="#svg-toyotatimes"
-                                                style="overflow:visible;"
-                                            ></use>
-                                        </clipPath>
-                                        <g style="clip-path:url(#SVGID_00000133487636625578837320000016383521004108553662_);">
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M42.6,20.9l1.2-6.9h-5.2h-5.5H28l-0.7,3.7h0l-1.2,6.9h5.2l1.2-6.9H38l-0.6,3.1l-4.1,0l-0.7,3.7l4.1,0L35.5,32h5.2l1.6-9L42.6,20.9L42.6,20.9z"
-                                            ></path>
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M60.8,17.7l0.9-4.8l-17,5.9l-0.9,4.8l6.4-2.2L49,28.3h5.3l1.6-8.8L60.8,17.7z"
-                                            ></path>
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M92.6,14.1H77.2l-0.7,3.7h7.2l-8.2,10.1l-1.7-8.7H69l1,5.4h-5.4L69.7,14h-5.3l-6.9,14.3h2.1h10.3h3.9h1.5h0h5.6l3.3-4l1.8,4H91l-3.7-7.8L92.6,14.1z"
-                                            ></path>
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M91.9,18.3h3.2l0.8-4.3h-3.2L91.9,18.3z"
-                                            ></path>
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M96.6,14.1l-0.8,4.3H99l0.8-4.3H96.6z"
-                                            ></path>
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M23.3,28.3l0.6-3.6l0.7-3.9l0.2-1.3h0l1-5.4h-5.2h-8.8l-0.6,3.6H20l-0.3,1.8h-8.9l-0.6,3.4h8.9l-0.3,1.8H9.9l-0.6,3.6h8.8H23.3z"
-                                            ></path>
-                                            <path
-                                                style="fill: #E60019;"
-                                                d="M26.3,11.5L27.1,7H10l1.2-7H5L0,28.3h6.2l3-16.8H26.3z"
-                                            ></path>
-                                        </g>
-                                    </g>
-                                </svg>
+                            <span>
+                                <ToyoTimes
+                                    src={ToyotimesLogo}
+                                    alt="toyotimes logo"
+                                />
                             </span>
                         </a>
                     </div>
-                </div>
-                <div class="global-footer__main-menu-sub-group-row-item">
-                    <dl class="global-footer__description">
-                        <dt class="global-footer__description-heading">
-                            TOYOTA Mail Magazine
-                        </dt>
-                        <dd class="global-footer__description-contents">
+                </FooterSNS>
+                <FooterSubscribe>
+                    <dl>
+                        <dt>TOYOTA Mail Magazine</dt>
+                        <dd>
                             <a
-                                class="global-footer__arrow-button"
-                                href="//toyota.jp/register_submitmail.html?padid=from_tjptop_footer_mail"
+                                href="https://toyota.jp/register_submitmail.html?padid=from_tjptop_footer_mail"
+                                target="blank"
                             >
-                                <span class="global-footer__arrow-button-text">
-                                    登録はこちら
-                                </span>
-                                <span class="global-footer__arrow-button-symbol">
-                                    <svg
-                                        class="global-footer__arrow-button-svg"
-                                        viewBox="0 0 7 10"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                    >
-                                        <path d="M1.66656 9.66927L0.726562 8.72927L4.44656 5.0026L0.726562 1.27594L1.66656 0.335938L6.33323 5.0026L1.66656 9.66927Z"></path>
-                                    </svg>
+                                <span>登録はこちら</span>
+                                <span>
+                                    <BsChevronRight />
                                 </span>
                             </a>
                         </dd>
                     </dl>
-                </div>
+                </FooterSubscribe>
             </div>
         </div>
     );
